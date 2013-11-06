@@ -11,17 +11,16 @@ describe Matrix do
 		
         end
 	
-        describe "Suma de Matrices" do
-                it "Halla la suma" do
-                        res = @ma + (@mb)
-                        res.mostrar.should eq("[[3,3], [5,5]]")
+        describe "Suma Matriz " do
+                it "Suma" do
+			  
+                        (@ma + @mb).mostrar.should eq("3\n 3\n 5\n 5\n")
                 end
         end
 	
-	describe "Resta de Matrices" do
-                it "Halla la resta" do
-                        res = @m1 - (@m2)
-                        res.mostrar.should eq("[[0,0], [0,0]]")
+	describe "Resta Matriz" do
+                it "Resta" do
+                        (@m1 - @m2).mostrar.should eq([[-1,1], [-1,1]])
                 end
 	end
 end
