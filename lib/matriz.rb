@@ -21,11 +21,10 @@ attr_reader:m, :n, :val, :matrix
   def mostrar
      mr = " "
     for i in 0...@m
-      mr << " [ "
+      mr << "  "
       for j in 0...@n
         mr << "#{matrix[i][j]} "
       end
-      mr << "]"
       mr << "\n "
     end
     print mr
@@ -41,7 +40,6 @@ attr_reader:m, :n, :val, :matrix
     for i in 0...@m do
       for j in 0...@n do
         aux[i][j] = self.matrix[i][j] + other.matrix[i][j]
-        puts aux[i][j]
       end
     end
     mr = Matrix.new(other.m, other.n)
@@ -54,17 +52,19 @@ attr_reader:m, :n, :val, :matrix
     for i in 0...@m do
       for j in 0...@n do
         aux[i][j] = self.matrix[i][j] - other.matrix[i][j]
-        puts aux[i][j]
       end
     end
-    mr = Matrix.new(other.m,other.n)
+    mr = Matrix.new(other.m, other.n)
     mr.rellenar(aux)
+    return (mr)
  end
  
  
 end
- 
- puts "Practica 8" 
+
+ puts
+ puts "--Practica 8--" 
+ puts
  ma = Matrix.new(2,2)
  ma.rellenar([[1,2],[2,3]])
  puts "Matriz A"
@@ -77,9 +77,10 @@ end
  puts "Suma"
  mc = Matrix.new(2,2)
  mc = ma + mb  
- puts
+ mc.mostrar()
  puts "Resta"
  mc = Matrix.new(2,2)
  mc = ma - mb
+ mc.mostrar()
  puts
  

@@ -13,13 +13,14 @@ describe Matrix do
 	
         describe "Suma Matriz " do
                 it "Suma" do
-                        (@ma + @mb).mostrar.should eq("3\n 3\n 5\n 5\n")
+			  
+                        (@ma + @mb).mostrar.should eq("   3 3 \n   5 5 \n ")
                 end
         end
 	
 	describe "Resta Matriz" do
                 it "Resta" do
-                        (@m1 - @m2).matrix.should eq([[-1,1], [-1,1]])
+                        (@ma - @mb).mostrar.should eq("  -1 1 \n   -1 1 \n ")
                 end
 	end
 end
