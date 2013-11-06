@@ -30,10 +30,6 @@ attr_reader:m, :n, :val, :matrix
     print mr
     return mr
   end
-
-
- 
- 
  
  def + (other)
    aux = Array.new(@m){Array.new(@n){0}}
