@@ -18,13 +18,23 @@ attr_reader:m, :n, :val, :matrix
    end
  end
  
- def mostrar()
-   for i in 0...@m
-     for j in 0...@n
-     puts @matrix[i][j]  
-     end
-   end
- end
+  def mostrar
+     mr = " "
+    for i in 0...@m
+      mr << " [ "
+      for j in 0...@n
+        mr << "#{matrix[i][j]} "
+      end
+      mr << "]"
+      mr << "\n "
+    end
+    print mr
+    return mr
+  end
+
+
+ 
+ 
  
  def + (other)
    aux = Array.new(@m){Array.new(@n){0}}
