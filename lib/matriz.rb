@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
 
+require './lib/racional.rb'
 
 class Matrix
 attr_reader:m, :n, :val, :matrix
@@ -60,23 +61,23 @@ end
 
  puts
  puts "--Practica 8--" 
- puts
- ma = Matrix.new(2,2)
- ma.rellenar([[1,2],[2,3]])
- puts "Matriz A"
- ma.mostrar()
- mb = Matrix.new(2,2)
- mb.rellenar([[2,1],[3,2]])
- puts "Matriz B"
- mb.mostrar()
- puts
- puts "Suma"
- mc = Matrix.new(2,2)
- mc = ma + mb  
- mc.mostrar()
- puts "Resta"
- mc = Matrix.new(2,2)
- mc = ma - mb
- mc.mostrar()
- puts
+#  puts
+#  ma = Matrix.new(2,2)
+#  ma.rellenar([[1,2],[2,3]])
+#  puts "Matriz A"
+#  ma.mostrar()
+#  mb = Matrix.new(2,2)
+#  mb.rellenar([[2,1],[3,2]])
+#  puts "Matriz B"
+#  mb.mostrar()
+#  puts
+#  puts "Suma"
+#  mc = Matrix.new(2,2)
+#  mc = ma + mb  
+#  mc.mostrar()
+#  puts "Resta"
+#  mc = Matrix.new(2,2)
+#  mc = ma - mb
+#  mc.mostrar()
+#  puts
  
